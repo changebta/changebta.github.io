@@ -36,16 +36,19 @@ body {
 /* Custom Button Styles */
 
 .btn-dark {
-    border-radius: 0;
+    border-radius: 0px;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
+	
 }
+
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
     background-color: rgba(0,0,0,0.7);
+	
 }
 
 .btn-light {
@@ -183,7 +186,11 @@ hr.small {
 }
 .btn.btn-dark.btn-lg {
     background-color: rgb(0,167,157);
-    font-weight: bold;
+    font-weight: normal;
+}
+
+.btn.btn-dark.btn-sm:hover {
+    background-color: rgb(0,117,107);
 }
 .btn.btn-dark.btn-lg:hover {
     background-color: rgb(0,117,107);
