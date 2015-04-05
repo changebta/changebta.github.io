@@ -27,7 +27,26 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-
+<script>
+        function postContactToGoogle() {
+            var email = $('#Email').val();
+   
+                $.ajax({
+                    url: "https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse",
+                    data: { "entry.1934033073": email, },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function () {
+                            window.location.replace("ThankYou.html");
+                        },
+                        200: function () {
+                            window.location.replace("ThankYou.html");
+                        }
+                    }
+                });
+        }
+    </script>
     </head>
 
     <body>
@@ -61,10 +80,15 @@
         <!-- Header -->
         <header id="top" class="header">
             <div class="text-vertical-center">
-                <img src="./img/logobeta.png" height=400px width=auto />
-                <h2>The Smallest Effort for Biggest Difference</h2>
-                <br>
-                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+                <img src="./img/logobeta.png" height=350px width=auto />
+            
+                <h2 style="font-size: 23px; font-weight:100;">The Smallest Effort for Biggest Difference</h2><br>
+               <form name="form1" method="post" action="">
+                  <input name="email" type="text" id="email" value="email address">
+                  <a href="" class="btn btn-dark btn-sm" onclick="postContactToGoogle()">Sign Up for Early Access!</a><br>
+                </form>
+                <br><br><br>
+               <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
             </div>
         </header>
 
