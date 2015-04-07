@@ -13,7 +13,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
@@ -47,6 +46,7 @@
                 });
         }
     </script>
+    
     </head>
 
     <body>
@@ -83,12 +83,39 @@
                 <img src="./img/logobeta.png" height=350px width=auto />
             
                 <h2 style="font-size: 23px; font-weight:100;">The Smallest Effort for Biggest Difference</h2><br>
-               <form name="form1" method="post" action="">
-                  <input name="email" type="text" id="email" value="email address">
-                  <button id="ButtonSubmit" onclick="postContactToGoogle()" 
-type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button><br>
+               <!--<form name="form1" method="post" action="">
+                 <table width="300" border="0" align="center">
+                   <tr>
+                     <td><input name="email" type="text" id="email" placeholder="email address"></td>
+                     <td><button id="ButtonSubmit" onclick="postContactToGoogle()" 
+type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button></td>
+                   </tr>
+                 </table>
+                 <br>
+                </form>-->
+                <script type="text/javascript">
+var submitted=false;
+</script><iframe id="hidden_iframe" name="hidden_iframe" onload="" style="display: none;"></iframe>
+
+<form action="https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse?embedded=true" method="POST" id="ss-form" onsubmit="javascript:alert( 'Your email has been submitted! Thank you for your interest.' );" target="hidden_iframe">
+                 <table width="300" border="0" align="center">
+                   <tr>
+                     <td><input placeholder="email address" type="text" name="entry.1934033073" class="ss-q-short" id="entry_1934033073" dir="auto" aria-label="Email Address  Please enter a valid email address." aria-required="true" required pattern=".*[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+.*" title="Please enter a valid email address"></td>
+                     <td>
+                     
+                     
+
+<input type="submit" name="submit" value="Sign Up for Early Access!" id="ss-submit" class="btn btn-dark btn-sm">
+
+
+
+</td>
+                   </tr>
+                 </table>
+                 <br>
                 </form>
-                <br><br><br>
+             
+             <br><br><br>
                <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
             </div>
         </header>
