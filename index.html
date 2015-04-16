@@ -341,6 +341,37 @@ var submitted=false;
             }
         });
     });
+
+
+    //Send confirmation email for the user who sign up for Change 
+     $('#ss-submit').click(function() {
+
+            var emailId = $('#entry_1934033073').val();
+            //console.log(emailId);
+            $.ajax({
+                type: "POST",
+                  url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                  data: {
+                    'key': 'x23fSyLpRPcbuBzyqYIDuQ',
+                    'message': {
+                        'from_email': 'changebta@gmail.com',
+                        'to': [
+                        {
+                            'email': emailId,
+                            'name': "",
+                            'type': 'to'
+                        }
+                        ],
+                        'autotext': 'true',
+                        'subject': 'Change Registration',
+                        'html': 'You are sucessfully registered to Change account'
+                    }
+                  }
+            }).done(function(response){
+                //console.log(response);
+        });
+    });
+   
     </script>
 
 </body>
