@@ -26,27 +26,27 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-<script>
+        <script>
         function postContactToGoogle() {
             var email = $('#Email').val();
-   
-                $.ajax({
-                    url: "https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse",
-                    data: { "entry.1934033073": email, },
-                    type: "POST",
-                    dataType: "xml",
-                    statusCode: {
-                        0: function () {
-                            window.location.replace("ThankYou.html");
-                        },
-                        200: function () {
-                            window.location.replace("ThankYou.html");
-                        }
+
+            $.ajax({
+                url: "https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse",
+                data: { "entry.1934033073": email, },
+                type: "POST",
+                dataType: "xml",
+                statusCode: {
+                    0: function () {
+                        window.location.replace("ThankYou.html");
+                    },
+                    200: function () {
+                        window.location.replace("ThankYou.html");
                     }
-                });
+                }
+            });
         }
-    </script>
-    
+        </script>
+
     </head>
 
     <body>
@@ -80,8 +80,8 @@
         <!-- Header -->
         <header id="top" class="header">
             <div class="text-vertical-center">
-                <img src="./img/logobeta.png" height=350px width=auto />
-            
+                <img src="./img/logobeta.png" class="img-responsive img-change-logo"  width=auto />
+
                 <h2 style="font-size: 23px; font-weight:100;">The Smallest Effort for Biggest Difference</h2><br>
                <!--<form name="form1" method="post" action="">
                  <table width="300" border="0" align="center">
@@ -92,200 +92,198 @@ type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button></td
                    </tr>
                  </table>
                  <br>
-                </form>-->
-                <script type="text/javascript">
-var submitted=false;
-</script><iframe id="hidden_iframe" name="hidden_iframe" onload="" style="display: none;"></iframe>
+             </form>-->
+             <script type="text/javascript">
+             var submitted=false;
+             </script>
 
-<form action="https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse?embedded=true" method="POST" id="ss-form" onsubmit="javascript:alert( 'Your email has been submitted! Thank you for your interest.' );" target="hidden_iframe">
+             <iframe id="hidden_iframe" name="hidden_iframe" onload="" style="display: none;"></iframe>
+
+             <form action="https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse?embedded=true" method="POST" id="ss-form" onsubmit="javascript:alert( 'Your email has been submitted! Thank you for your interest.' );" target="hidden_iframe">
                  <table width="300" border="0" align="center">
                    <tr>
-                     <td><input placeholder="email address" type="text" name="entry.1934033073" style= color:black class="ss-q-short" id="entry_1934033073" dir="auto" aria-label="Email Address  Please enter a valid email address." aria-required="true" required pattern=".*[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+.*" title="Please enter a valid email address"></td>
                      <td>
-                     
-                     
+                        <input placeholder="email address" type="text" name="entry.1934033073" style= color:black class="ss-q-short" id="entry_1934033073" dir="auto" aria-label="Email Address  Please enter a valid email address." aria-required="true" required pattern=".*[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+.*" title="Please enter a valid email address">
+                    </td>
+                    <td>
+                        <input type="submit" name="submit"  value="Sign Up for Early Access!" id="ss-submit" class="btn btn-dark btn-sm">
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </form>
 
-<input type="submit" name="submit" style=color value="Sign Up for Early Access!" id="ss-submit" class="btn btn-dark btn-sm">
+        <br><br><br>
+        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    </div>
+</header>
 
-
-
-</td>
-                   </tr>
-                 </table>
-                 <br>
-                </form>
-             
-             <br><br><br>
-               <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+<!-- About -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>CHANGE is based on the idea that every little bit helps. Spare change, cent by cent, can build up and help transform the lives of many.</h3>
+                <br>
+                <h3>Change gives you the option to round up your credit or debit card purchases so that your extra cents can find a greater purpose. When added up, spare change can make a huge difference.</h3>
+                <br>
+                <br>
+                <a href="#services" class="btn btn-dark btn-lg moved-down">Our Services</a>
             </div>
-        </header>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
 
-        <!-- About -->
-        <section id="about" class="about">
-            <div class="container">
+<!-- Services -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-primary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2 class="headmargin">How It Works</h2>
+                <hr class="small">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h3>CHANGE is based on the idea that every little bit helps. Spare change, cent by cent, can build up and help transform the lives of many.</h3>
-                        <br>
-                        <h3>Change gives you the option to round up your credit or debit card purchases so that your extra cents can find a greater purpose. When added up, spare change can make a huge difference.</h3>
-                        <br>
-                        <br>
-                        <a href="#services" class="btn btn-dark btn-lg moved-down">Our Services</a>
-                    </div>
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-
-        <!-- Services -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <section id="services" class="services bg-primary">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <h2 class="headmargin">How It Works</h2>
-                        <hr class="small">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-credit-card fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>Register Your Credit Card</strong>
-                                    </h4>
-                                    <p>Subscribe to change and register your credit card to get started.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-money fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>Round Up</strong>
-                                    </h4>
-                                    <p>Every transaction made on the credit card will be rounded up based on your preferences.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-child fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>Contribute to Your Cause</strong>
-                                    </h4>
-                                    <p>Choose where your spare change goes by selecting a non-profit you care deeply about.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-globe fa-stack-1x text-primary"></i>
-                                    </span>
-                                    <h4>
-                                        <strong>Change the World</strong>
-                                    </h4>
-                                    <p>See your spare change add up and make a difference in the world.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.row (nested) -->
-                    </div>
-                    <!-- /.col-lg-10 -->
-                                            <div>
-                            <ul class="list-inline">
-                                <li><a href="#top" class="btn btn-light btn-lg">Sign Up</a></li>
-                                <li><a href="#portfolio" class="btn btn-light btn-lg">Our Team</a></li>
-                            </ul>
-                        </div>
-                </div>
-
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-        </section>
-
-        <!-- Our Team -->
-        <section class="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <div id="portfolio"><br>
-                            <h2 class="bolded-font" style=color:rgb(0,167,157) >Our Team</h2>
-                        </div>
-                        <hr class="small">
-                        <div class="bigpic">
-                            <img class="img-portfolio-group" src="./img/Group.jpg">
-                        </div>    
-                        <br>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="portfolio-item">   
-                                     <img class="img-portfolio img-responsive" src="./img/Pras.jpg">
-                                    <h3>
-                                    <a href ="https://www.linkedin.com/in/deshpandepras" target ="_blank" style=color:rgb(0,167,157)> Prasanna Deshpande </a>
-                                </h3>
-                                <h4> Chief Executive Officer </h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="portfolio-item">
-                                     <img class="img-portfolio img-responsive" src="./img/Pratik.jpg">      
-                                       <h3>
-                                         <a href ="https://www.linkedin.com/in/pratiksampat" target ="_blank" style=color:rgb(0,167,157)> Pratik Sampat </a>
-                                      </h3>
-                                      <h4> Chief Operating Officer </h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="portfolio-item">
-                                     <img class="img-portfolio img-responsive" src="./img/Chetan.jpg">
-                                       <h3>
-                                         <a href ="https://www.linkedin.com/pub/chetan-munegowda/55/183/69" target ="_blank" style=color:rgb(0,167,157)> Chetan Munegowda </a>
-                                      </h3>
-                                      <h4> Chief Technical Officer </h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="portfolio-item">
-                                    <img class="img-portfolio img-responsive" src="./img/Fran.jpg">
-                                       <h3>
-                                         <a href ="https://www.linkedin.com/in/AlvarezRinconFrancisco" target ="_blank" style=color:rgb(0,167,157)> Francisco Alvarez Rincon </a>
-                                      </h3>
-                                      <h4> Director of Design </h4>
-                                </div>
-                            </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-credit-card fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>Register Your Credit Card</strong>
+                            </h4>
+                            <p>Subscribe to change and register your credit card to get started.</p>
                         </div>
                     </div>
-                    <!-- /.col-lg-10 -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-money fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>Round Up</strong>
+                            </h4>
+                            <p>Every transaction made on the credit card will be rounded up based on your preferences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-child fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>Contribute to Your Cause</strong>
+                            </h4>
+                            <p>Choose where your spare change goes by selecting a non-profit you care deeply about.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-globe fa-stack-1x text-primary"></i>
+                            </span>
+                            <h4>
+                                <strong>Change the World</strong>
+                            </h4>
+                            <p>See your spare change add up and make a difference in the world.</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- /.row -->
+                <!-- /.row (nested) -->
             </div>
-            <!-- /.container -->
-        </section>
+            <!-- /.col-lg-10 -->
+            <div>
+                <ul class="list-inline">
+                    <li><a href="#top" class="btn btn-light btn-lg">Sign Up</a></li>
+                    <li><a href="#portfolio" class="btn btn-light btn-lg">Our Team</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <!-- Footer -->
-        <footer>
-            <div id="contact" class="container">
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Our Team -->
+<section class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div id="portfolio"><br>
+                    <h2 class="bolded-font" style=color:rgb(0,167,157) >Our Team</h2>
+                </div>
+                <hr class="small">
+                <div class="bigpic">
+                    <img class="img-portfolio-group" src="./img/Group.jpg">
+                </div>    
+                <br>
+                <br>
                 <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <a href="#contact" class="btn btn-dark btn-lg">Contact Us</a>
-                        <h4 class="hq"><strong>CHANGE Headquarters</strong>
-                        </h4>
-                        <p>Illinois Institute of Technology<br>Chicago, IL 60616</p>
-                        <ul class="list-unstyled">
-                            <li><i class="fa fa-phone fa-fw"></i> (312)927-4219</li>
-                            <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com" style="color: rgb(0,167,157)">changebta@gmail.com</a>
-                            </li>
-                        </ul>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">   
+                         <img class="img-portfolio img-responsive" src="./img/Pras.jpg">
+                         <h3>
+                            <a href ="https://www.linkedin.com/in/deshpandepras" target ="_blank" style=color:rgb(0,167,157)> Prasanna Deshpande </a>
+                        </h3>
+                        <h4> Chief Executive Officer </h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portfolio-item">
+                     <img class="img-portfolio img-responsive" src="./img/Pratik.jpg">      
+                     <h3>
+                         <a href ="https://www.linkedin.com/in/pratiksampat" target ="_blank" style=color:rgb(0,167,157)> Pratik Sampat </a>
+                     </h3>
+                     <h4> Chief Operating Officer </h4>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                <div class="portfolio-item">
+                 <img class="img-portfolio img-responsive" src="./img/Chetan.jpg">
+                 <h3>
+                     <a href ="https://www.linkedin.com/pub/chetan-munegowda/55/183/69" target ="_blank" style=color:rgb(0,167,157)> Chetan Munegowda </a>
+                 </h3>
+                 <h4> Chief Technical Officer </h4>
+             </div>
+         </div>
+         <div class="col-md-6">
+            <div class="portfolio-item">
+                <img class="img-portfolio img-responsive" src="./img/Fran.jpg">
+                <h3>
+                 <a href ="https://www.linkedin.com/in/AlvarezRinconFrancisco" target ="_blank" style=color:rgb(0,167,157)> Francisco Alvarez Rincon </a>
+             </h3>
+             <h4> Director of Design </h4>
+         </div>
+     </div>
+ </div>
+</div>
+<!-- /.col-lg-10 -->
+</div>
+<!-- /.row -->
+</div>
+<!-- /.container -->
+</section>
+
+<!-- Footer -->
+<footer>
+    <div id="contact" class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <a href="#contact" class="btn btn-dark btn-lg">Contact Us</a>
+                <h4 class="hq"><strong>CHANGE Headquarters</strong>
+                </h4>
+                <p>Illinois Institute of Technology<br>Chicago, IL 60616</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (312)927-4219</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com" style="color: rgb(0,167,157)">changebta@gmail.com</a>
+                    </li>
+                </ul>
                         <br><!--
                         <ul class="list-inline">
                             <li>
@@ -344,14 +342,14 @@ var submitted=false;
 
 
     //Send confirmation email for the user who sign up for Change 
-     $('#ss-submit').click(function() {
+    $('#ss-submit').click(function() {
 
-            var emailId = $('#entry_1934033073').val();
+        var emailId = $('#entry_1934033073').val();
             //console.log(emailId);
             $.ajax({
                 type: "POST",
-                  url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                  data: {
+                url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                data: {
                     'key': 'x23fSyLpRPcbuBzyqYIDuQ',
                     'message': {
                         'from_email': 'changebta@gmail.com',
@@ -366,12 +364,12 @@ var submitted=false;
                         'subject': 'Change Registration',
                         'html': 'You are sucessfully registered to Change account'
                     }
-                  }
+                }
             }).done(function(response){
                 //console.log(response);
+            });
         });
-    });
-   
+
     </script>
 
 </body>
