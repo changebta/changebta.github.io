@@ -99,23 +99,23 @@ type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button></td
 
              <iframe id="hidden_iframe" name="hidden_iframe" onload="" style="display: none;"></iframe>
 
-             <form action="https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse?embedded=true" method="POST" id="ss-form" onsubmit="javascript:alert( 'Your email has been submitted! Thank you for your interest.' );" target="hidden_iframe">
-                 <table width="300" border="0" align="center">
-                   <tr>
-                     <td>
-                        <input placeholder="email address" type="text" name="entry.1934033073" style= color:black class="ss-q-short" id="entry_1934033073" dir="auto" aria-label="Email Address  Please enter a valid email address." aria-required="true" required pattern=".*[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+.*" title="Please enter a valid email address">
-                    </td>
-                    <td>
-                        <input type="submit" name="submit"  value="Sign Up for Early Access!" id="ss-submit" class="btn btn-dark btn-sm">
-                    </td>
-                </tr>
-            </table>
-            <br>
-        </form>
+             <form action="https://docs.google.com/a/hawk.iit.edu/forms/d/1bQW6FfNfcAI7SvDhK9X5h6gk-fCbuoEFBKyesUYSUxE/formResponse?embedded=true" method="POST" id="ss-form" target="hidden_iframe">
+               <table width="300" border="0" align="center">
+                 <tr>
+                   <td>
+                    <input placeholder="email address" type="text" name="entry.1934033073" style= color:black class="ss-q-short" id="entry_1934033073" dir="auto" aria-label="Email Address  Please enter a valid email address." aria-required="true" required pattern=".*[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+.*" title="Please enter a valid email address">
+                </td>
+                <td>
+                    <input type="submit" name="submit"  value="Sign Up for Early Access!" data-toggle="modal" id="ss-submit" class="btn btn-dark btn-sm">
+                </td>
+            </tr>
+        </table>
+        <br>
+    </form>
 
-        <br><br><br>
-        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-    </div>
+    <br><br><br>
+    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+</div>
 </header>
 
 <!-- About -->
@@ -227,8 +227,8 @@ type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button></td
                 <div class="row">
                     <div class="col-md-6">
                         <div class="portfolio-item">   
-                         <img class="img-portfolio img-responsive" src="./img/Pras.jpg">
-                         <h3>
+                           <img class="img-portfolio img-responsive" src="./img/Pras.jpg">
+                           <h3>
                             <a href ="https://www.linkedin.com/in/deshpandepras" target ="_blank" style=color:rgb(0,167,157)> Prasanna Deshpande </a>
                         </h3>
                         <h4> Chief Executive Officer </h4>
@@ -236,32 +236,32 @@ type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button></td
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio-item">
-                     <img class="img-portfolio img-responsive" src="./img/Pratik.jpg">      
-                     <h3>
-                         <a href ="https://www.linkedin.com/in/pratiksampat" target ="_blank" style=color:rgb(0,167,157)> Pratik Sampat </a>
-                     </h3>
-                     <h4> Chief Operating Officer </h4>
-                 </div>
-             </div>
-             <div class="col-md-6">
+                       <img class="img-portfolio img-responsive" src="./img/Pratik.jpg">      
+                       <h3>
+                           <a href ="https://www.linkedin.com/in/pratiksampat" target ="_blank" style=color:rgb(0,167,157)> Pratik Sampat </a>
+                       </h3>
+                       <h4> Chief Operating Officer </h4>
+                   </div>
+               </div>
+               <div class="col-md-6">
                 <div class="portfolio-item">
-                 <img class="img-portfolio img-responsive" src="./img/Chetan.jpg">
-                 <h3>
-                     <a href ="https://www.linkedin.com/pub/chetan-munegowda/55/183/69" target ="_blank" style=color:rgb(0,167,157)> Chetan Munegowda </a>
-                 </h3>
-                 <h4> Chief Technical Officer </h4>
-             </div>
-         </div>
-         <div class="col-md-6">
+                   <img class="img-portfolio img-responsive" src="./img/Chetan.jpg">
+                   <h3>
+                       <a href ="https://www.linkedin.com/pub/chetan-munegowda/55/183/69" target ="_blank" style=color:rgb(0,167,157)> Chetan Munegowda </a>
+                   </h3>
+                   <h4> Chief Technical Officer </h4>
+               </div>
+           </div>
+           <div class="col-md-6">
             <div class="portfolio-item">
                 <img class="img-portfolio img-responsive" src="./img/Fran.jpg">
                 <h3>
-                 <a href ="https://www.linkedin.com/in/AlvarezRinconFrancisco" target ="_blank" style=color:rgb(0,167,157)> Francisco Alvarez Rincon </a>
-             </h3>
-             <h4> Director of Design </h4>
-         </div>
-     </div>
- </div>
+                   <a href ="https://www.linkedin.com/in/AlvarezRinconFrancisco" target ="_blank" style=color:rgb(0,167,157)> Francisco Alvarez Rincon </a>
+               </h3>
+               <h4> Director of Design </h4>
+           </div>
+       </div>
+   </div>
 </div>
 <!-- /.col-lg-10 -->
 </div>
@@ -370,7 +370,46 @@ type="button" class="btn btn-dark btn-sm">Sign Up for Early Access!</button></td
             });
         });
 
-    </script>
+    /*
+    Hide the dialog box when the email address format is wrong or not given else show the 
+    dialog window    
+    */
+    $("#ss-submit").click(function(e){
+            var email = $('#entry_1934033073').val();
+            var re = new RegExp(".*[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+.*");
+
+            if(email.trim() == ""){
+                $('#signupModal').modal('hide');
+            }
+            else if(!re.test(email)) {
+                $('#signupModal').modal('hide');
+            }
+            else{
+                 $('#signupModal').modal('show');
+            }
+        });
+
+
+</script>
+<!-- Modal -->
+<div id="signupModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Success!</h4>
+    </div>
+    <div class="modal-body">
+        <p>Your email has been submitted! Thank you for your interest.</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
 
 </body>
 
